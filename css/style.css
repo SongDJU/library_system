@@ -311,6 +311,9 @@ body {
 
 .book-card-info {
     padding: 1rem;
+    background: var(--white);
+    position: relative;
+    z-index: 1;
 }
 
 .book-card-title {
