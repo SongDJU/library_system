@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사내 도서관</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- SSO 인증 실패 시 표시 -->
+    <div id="auth-error" class="auth-error hidden">
+        <div class="auth-error-content">
+            <i class="ri-shield-keyhole-line"></i>
+            <h2>접근 권한이 없습니다</h2>
+            <p>이 페이지는 SSO 인증이 필요합니다.<br>Amaranth10에서 접속해 주세요.</p>
+        </div>
+    </div>
+
+    <!-- 메인 앱 -->
+    <div id="app" class="hidden">
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="header-left">
+                <i class="ri-book-3-line logo-icon"></i>
+                <h1>사내 도서관</h1>
+            </div>
+            <div class="header-right">
+                <a href="/admin" id="admin-link" class="btn btn-secondary btn-sm hidden">
+                    <i class="ri-settings-3-line"></i>
+                    관리자
+                </a>
+                <div class="user-info">
+                    <i class="ri-user-line"></i>
+                    <span id="user-name">로딩중...</span>
+                    <span id="user-dept" class="user-dept"></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 패널티 알림 -->
+        <div id="penalty-banner" class="penalty-banner hidden">
+            <i class="ri-error-warning-line"></i>
+            <span id="penalty-message">대출이 제한되어 있습니다.</span>
+        </div>
+
+        <!-- 탭 네비게이션 -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="books">
+                <i class="ri-book-2-line"></i>
+                <span>도서 목록</span>
+            </button>
+            <button class="tab-btn" data-tab="new-books">
+                <i class="ri-sparkling-line"></i>
+                <span>이달의 신규</span>
+            </button>
+            <button class="tab-btn" data-tab="my-loans">
+                <i class="ri-bookmark-line"></i>
+                <span>내 대출</span>
+            </button>
+            <button class="tab-btn" data-tab="my-reservations">
+                <i class="ri-calendar-check-line"></i>
+                <span>내 예약</span>
+            </button>
+            <button class="tab-btn" data-tab="my-info">
+                <i class="ri-user-settings-line"></i>
+                <span>내 정보</span>
+            </button>
+        </nav>
+
+        <!-- 메인 컨텐츠 -->
+        <main class="main-content">
+            <!-- 도서 목록 탭 -->
+            <section id="tab-books" class="tab-content active">
+                <div class="search-bar">
+                    <div class="search-input-wrapper">
+                        <i class="ri-search-line"></i>
+                        <input type="text" id="search-input" placeholder="도서명, 저자, 출판사 검색...">
+                    </div>
+                    <div class="filter-wrapper">
+                        <select id="status-filter">
+                            <option value="all">전체</option>
+                            <option value="available">대출 가능</option>
+                            <option value="borrowed">대출 중</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="book-stats">
+                    <span id="total-count">전체 0권</span>
+                    <span id="available-count">대출 가능 0권</span>
+                </div>
+                <div id="book-list" class="book-grid">
+                </div>
+            </section>
+
+            <!-- 이달의 신규 도서 탭 -->
+            <section id="tab-new-books" class="tab-content">
+                <h2 class="section-title">
+                    <i class="ri-sparkling-line"></i>
+                    이달의 신규 도서
+                </h2>
+                <p class="section-desc">이번 달에 새로 등록된 도서입니다.</p>
+                <div id="new-books-list" class="book-grid">
+                </div>
+            </section>
+
+            <!-- 내 대출 탭 -->
+            <section id="tab-my-loans" class="tab-content">
+                <h2 class="section-title">
+                    <i class="ri-bookmark-line"></i>
+                    내 대출 현황
+                </h2>
+                <div id="my-loans-list" class="loan-list">
+                </div>
+            </section>
+
+            <!-- 내 예약 탭 -->
+            <section id="tab-my-reservations" class="tab-content">
+                <h2 class="section-title">
+                    <i class="ri-calendar-check-line"></i>
+                    내 예약 현황
+                </h2>
+                <div id="my-reservations-list" class="loan-list">
+                </div>
+            </section>
+
+            <!-- 내 정보 탭 -->
+            <section id="tab-my-info" class="tab-content">
+                <h2 class="section-title">
+                    <i class="ri-user-settings-line"></i>
+                    내 정보
+                </h2>
+                <div class="info-card">
+                    <div class="info-row">
+                        <span class="info-label">이름</span>
+                        <span class="info-value" id="info-name">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">사원코드</span>
+                        <span class="info-value" id="info-empcode">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">부서</span>
+                        <span class="info-value" id="info-dept">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">이메일</span>
+                        <span class="info-value">
+                            <input type="email" id="info-email" placeholder="이메일을 입력하세요">
+                        </span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">대출 제한</span>
+                        <span class="info-value" id="info-penalty">-</span>
+                    </div>
+                    <button class="btn btn-primary" id="save-my-info">
+                        <i class="ri-save-line"></i>
+                        저장
+                    </button>
+                    <p class="info-note">* 이메일을 등록하면 반납 알림을 받을 수 있습니다.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- 모달: 도서 상세 -->
+        <div id="book-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close">
+                    <i class="ri-close-line"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="modal-book-image">
+                        <img id="modal-image" src="" alt="도서 표지">
+                    </div>
+                    <div class="modal-book-info">
+                        <h2 id="modal-title">도서명</h2>
+                        <p class="modal-meta">
+                            <span id="modal-author">저자</span> | 
+                            <span id="modal-publisher">출판사</span>
+                        </p>
+                        <div id="modal-status" class="status-badge">대출 가능</div>
+                        <div id="modal-due-info" class="due-info hidden">
+                            <p>반납예정일: <strong id="modal-due-date"></strong></p>
+                            <p id="modal-days-left"></p>
+                        </div>
+                        <div id="modal-applicant-info" class="applicant-info hidden">
+                            <p>대출자: <strong id="modal-applicant"></strong></p>
+                            <p>대출일: <strong id="modal-loan-date"></strong></p>
+                        </div>
+                        <div id="modal-reservation-info" class="reservation-info hidden">
+                            <p><i class="ri-calendar-line"></i> 예약자 <strong id="modal-reservation-count">0</strong>명 대기 중</p>
+                        </div>
+                        <div class="modal-actions">
+                            <button id="btn-borrow" class="btn btn-primary">
+                                <i class="ri-book-read-line"></i>
+                                대출하기
+                            </button>
+                            <button id="btn-return" class="btn btn-success hidden">
+                                <i class="ri-arrow-go-back-line"></i>
+                                반납하기
+                            </button>
+                            <button id="btn-reserve" class="btn btn-secondary hidden">
+                                <i class="ri-calendar-check-line"></i>
+                                예약하기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 토스트 알림 -->
+        <div id="toast" class="toast hidden">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

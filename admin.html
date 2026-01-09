@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관 관리자</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 접근 권한 없음 -->
+    <div id="access-denied" class="auth-error hidden">
+        <div class="auth-error-content">
+            <i class="ri-admin-line"></i>
+            <h2>관리자 권한이 필요합니다</h2>
+            <p>이 페이지는 관리자만 접근할 수 있습니다.</p>
+            <a href="/" class="btn btn-primary" style="margin-top: 1rem;">
+                <i class="ri-home-line"></i> 메인으로 돌아가기
+            </a>
+        </div>
+    </div>
+
+    <!-- 관리자 앱 -->
+    <div id="admin-app" class="hidden">
+        <!-- 헤더 -->
+        <header class="header admin-header">
+            <div class="header-left">
+                <i class="ri-settings-3-line logo-icon"></i>
+                <h1>도서관 관리자</h1>
+            </div>
+            <div class="header-right">
+                <a href="/" class="btn btn-secondary btn-sm">
+                    <i class="ri-home-line"></i>
+                    메인으로
+                </a>
+                <div class="user-info">
+                    <i class="ri-admin-fill"></i>
+                    <span id="admin-name">관리자</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 탭 네비게이션 -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="dashboard">
+                <i class="ri-dashboard-line"></i>
+                <span>대시보드</span>
+            </button>
+            <button class="tab-btn" data-tab="books">
+                <i class="ri-book-2-line"></i>
+                <span>도서 관리</span>
+            </button>
+            <button class="tab-btn" data-tab="users">
+                <i class="ri-user-settings-line"></i>
+                <span>사용자 관리</span>
+            </button>
+            <button class="tab-btn" data-tab="loans">
+                <i class="ri-bookmark-line"></i>
+                <span>대출 현황</span>
+            </button>
+            <button class="tab-btn" data-tab="settings">
+                <i class="ri-settings-4-line"></i>
+                <span>설정</span>
+            </button>
+        </nav>
+
+        <!-- 메인 컨텐츠 -->
+        <main class="main-content">
+            <!-- 대시보드 -->
+            <section id="tab-dashboard" class="tab-content active">
+                <h2 class="section-title">
+                    <i class="ri-dashboard-line"></i>
+                    대시보드
+                </h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon blue"><i class="ri-book-3-line"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-total-books">0</span>
+                            <span class="stat-label">전체 도서</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon green"><i class="ri-checkbox-circle-line"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-available">0</span>
+                            <span class="stat-label">대출 가능</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon orange"><i class="ri-bookmark-line"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-borrowed">0</span>
+                            <span class="stat-label">대출 중</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon red"><i class="ri-alarm-warning-line"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-overdue">0</span>
+                            <span class="stat-label">연체</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon purple"><i class="ri-user-line"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-users">0</span>
+                            <span class="stat-label">사용자</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon teal"><i class="ri-calendar-check-line"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-reservations">0</span>
+                            <span class="stat-label">예약 대기</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon pink"><i class="ri-sparkling-line"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-new-books">0</span>
+                            <span class="stat-label">이달의 신규</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-sections">
+                    <div class="dashboard-section">
+                        <h3><i class="ri-alarm-warning-line"></i> 연체 도서</h3>
+                        <div id="overdue-list" class="mini-list">
+                            <p class="empty-text">연체 도서가 없습니다.</p>
+                        </div>
+                    </div>
+                    <div class="dashboard-section">
+                        <h3><i class="ri-sparkling-line"></i> 이달의 신규 도서</h3>
+                        <div id="new-books-list" class="mini-list">
+                            <p class="empty-text">이달의 신규 도서가 없습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 도서 관리 -->
+            <section id="tab-books" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="ri-book-2-line"></i>
+                        도서 관리
+                    </h2>
+                    <button class="btn btn-primary" id="btn-add-book">
+                        <i class="ri-add-line"></i>
+                        도서 추가
+                    </button>
+                </div>
+
+                <div class="search-bar">
+                    <div class="search-input-wrapper">
+                        <i class="ri-search-line"></i>
+                        <input type="text" id="admin-book-search" placeholder="도서명, 저자 검색...">
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>표지</th>
+                                <th>도서명</th>
+                                <th>저자</th>
+                                <th>출판사</th>
+                                <th>상태</th>
+                                <th>등록일</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody id="books-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 사용자 관리 -->
+            <section id="tab-users" class="tab-content">
+                <h2 class="section-title">
+                    <i class="ri-user-settings-line"></i>
+                    사용자 관리
+                </h2>
+                <p class="section-desc">사용자 이메일을 등록하면 반납 알림 메일이 발송됩니다.</p>
+
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>사원코드</th>
+                                <th>이름</th>
+                                <th>부서</th>
+                                <th>이메일</th>
+                                <th>대출 제한</th>
+                                <th>관리자</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 대출 현황 -->
+            <section id="tab-loans" class="tab-content">
+                <h2 class="section-title">
+                    <i class="ri-bookmark-line"></i>
+                    대출 현황
+                </h2>
+
+                <div class="filter-bar">
+                    <select id="loan-filter">
+                        <option value="all">전체</option>
+                        <option value="normal">정상</option>
+                        <option value="overdue">연체</option>
+                    </select>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>도서명</th>
+                                <th>대출자</th>
+                                <th>대출일</th>
+                                <th>반납예정일</th>
+                                <th>상태</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody id="loans-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 설정 -->
+            <section id="tab-settings" class="tab-content">
+                <h2 class="section-title">
+                    <i class="ri-settings-4-line"></i>
+                    시스템 설정
+                </h2>
+
+                <div class="settings-grid">
+                    <!-- SMTP 설정 -->
+                    <div class="settings-card">
+                        <h3><i class="ri-mail-settings-line"></i> SMTP 설정</h3>
+                        <p class="settings-desc">이메일 알림 발송을 위한 SMTP 서버 설정</p>
+                        
+                        <div class="form-group">
+                            <label>SMTP 호스트</label>
+                            <input type="text" id="smtp-host" placeholder="smtp.gmail.com">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>포트</label>
+                                <input type="number" id="smtp-port" placeholder="587">
+                            </div>
+                            <div class="form-group">
+                                <label>보안 연결 (SSL)</label>
+                                <select id="smtp-secure">
+                                    <option value="false">TLS (587)</option>
+                                    <option value="true">SSL (465)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>사용자 (이메일)</label>
+                            <input type="text" id="smtp-user" placeholder="your-email@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label>비밀번호 (앱 비밀번호)</label>
+                            <input type="password" id="smtp-password" placeholder="앱 비밀번호 입력">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>발신자 이름</label>
+                                <input type="text" id="smtp-from-name" placeholder="사내 도서관">
+                            </div>
+                            <div class="form-group">
+                                <label>발신 이메일</label>
+                                <input type="text" id="smtp-from-email" placeholder="library@company.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 관리자 설정 -->
+                    <div class="settings-card">
+                        <h3><i class="ri-admin-line"></i> 관리자 설정</h3>
+                        <p class="settings-desc">관리자 권한을 가진 사원코드/로그인ID 목록</p>
+                        
+                        <div class="form-group">
+                            <label>관리자 코드 (쉼표로 구분)</label>
+                            <textarea id="admin-codes" rows="3" placeholder="ADMIN001, admin, E12345"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-large" id="save-settings">
+                    <i class="ri-save-line"></i>
+                    설정 저장
+                </button>
+            </section>
+        </main>
+
+        <!-- 도서 추가/수정 모달 -->
+        <div id="book-edit-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content modal-large">
+                <button class="modal-close" id="book-modal-close">
+                    <i class="ri-close-line"></i>
+                </button>
+                <div class="modal-header">
+                    <h2 id="book-modal-title">도서 추가</h2>
+                </div>
+                <div class="modal-body-form">
+                    <div class="form-group">
+                        <label>도서명 *</label>
+                        <div class="input-with-button">
+                            <input type="text" id="edit-book-title" placeholder="도서명 입력">
+                            <button type="button" id="edit-search-naver" class="btn btn-secondary">
+                                <i class="ri-search-line"></i> 네이버 검색
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="edit-naver-results" class="naver-results hidden">
+                        <h4>검색 결과</h4>
+                        <div id="edit-naver-results-list"></div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>저자 *</label>
+                            <input type="text" id="edit-book-author" placeholder="저자">
+                        </div>
+                        <div class="form-group">
+                            <label>출판사 *</label>
+                            <input type="text" id="edit-book-publisher" placeholder="출판사">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>표지 이미지 URL</label>
+                        <input type="text" id="edit-book-image" placeholder="이미지 URL">
+                    </div>
+
+                    <div class="form-group">
+                        <label>설명</label>
+                        <textarea id="edit-book-description" rows="3" placeholder="도서 설명"></textarea>
+                    </div>
+
+                    <input type="hidden" id="edit-book-id">
+
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-secondary" id="btn-cancel-book">취소</button>
+                        <button type="button" class="btn btn-primary" id="btn-save-book">
+                            <i class="ri-save-line"></i> 저장
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 사용자 수정 모달 -->
+        <div id="user-edit-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="user-modal-close">
+                    <i class="ri-close-line"></i>
+                </button>
+                <div class="modal-header">
+                    <h2>사용자 정보 수정</h2>
+                </div>
+                <div class="modal-body-form">
+                    <div class="form-group">
+                        <label>사원코드</label>
+                        <input type="text" id="edit-user-empcode" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>이름</label>
+                        <input type="text" id="edit-user-name">
+                    </div>
+                    <div class="form-group">
+                        <label>이메일</label>
+                        <input type="email" id="edit-user-email" placeholder="이메일 입력">
+                    </div>
+                    <div class="form-group">
+                        <label>부서</label>
+                        <input type="text" id="edit-user-dept">
+                    </div>
+                    <div class="form-group">
+                        <label>대출 제한 해제일</label>
+                        <input type="date" id="edit-user-penalty">
+                        <small>비워두면 제한 해제</small>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="edit-user-admin">
+                            관리자 권한 부여
+                        </label>
+                    </div>
+
+                    <input type="hidden" id="edit-user-loginid">
+
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-secondary" id="btn-cancel-user">취소</button>
+                        <button type="button" class="btn btn-primary" id="btn-save-user">
+                            <i class="ri-save-line"></i> 저장
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 토스트 -->
+        <div id="toast" class="toast hidden">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>

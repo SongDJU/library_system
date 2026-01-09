@@ -1,0 +1,17 @@
+{
+  "smtp": {
+    "host": "",
+    "port": 587,
+    "secure": false,
+    "user": "",
+    "password": "",
+    "from_email": "",
+    "from_name": "사내 도서관"
+  },
+  "loan": {
+    "duration_days": 14,
+    "reminder_days": [3, 1],
+    "penalty_multiplier": 1.5
+  },
+  "admin_codes": ["ADMIN001", "admin"]
+}

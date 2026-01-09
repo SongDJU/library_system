@@ -1,0 +1,1092 @@
+[
+  {
+    "id": 1,
+    "book_title": "단순하게 살아라",
+    "publisher": "베르너 티키 퀴스텐마허 외",
+    "author": "김영사",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244519/32445190511.20231004072442.jpg"
+  },
+  {
+    "id": 2,
+    "book_title": "한국정치사상사",
+    "publisher": "한국 동양정치사상사학회",
+    "author": "백산서당",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_5522739/55227391366.20250610093506.jpg"
+  },
+  {
+    "id": 3,
+    "book_title": "CEO 안철수, 영혼이 있는 승부",
+    "publisher": "안철수",
+    "author": "김영사",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249292/32492920873.20230927071448.jpg"
+  },
+  {
+    "id": 4,
+    "book_title": "건설의 숲에서 인문의 길을 걷다",
+    "publisher": "윤종명",
+    "author": "더로드",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249690/32496904795.20250828071510.jpg"
+  },
+  {
+    "id": 5,
+    "book_title": "2020년 위기와 기회의 미래 유엔미래보고서2",
+    "publisher": "박영숙 외",
+    "author": "교보문고",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246693/32466937655.20220527084912.jpg"
+  },
+  {
+    "id": 6,
+    "book_title": "이방인",
+    "publisher": "알베르 카뮈",
+    "author": "새움",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246549/32465496972.20230919123555.jpg"
+  },
+  {
+    "id": 7,
+    "book_title": "젊은 예술가의 초상",
+    "publisher": "제임스 조이스",
+    "author": "범우사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5526923/55269235572.20250613093921.jpg"
+  },
+  {
+    "id": 8,
+    "book_title": "혼창통",
+    "publisher": "이지훈",
+    "author": "쌤앤파커스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3247395/32473959284.20230425161859.jpg"
+  },
+  {
+    "id": 9,
+    "book_title": "파우스트1",
+    "publisher": "요한 볼프강 폰 괴테",
+    "author": "민음사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_4147438/41474380652.20231115072144.jpg"
+  },
+  {
+    "id": 10,
+    "book_title": "파우스트2",
+    "publisher": "요한 볼프강 폰 괴테",
+    "author": "민음사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_4147437/41474372625.20231115071917.jpg"
+  },
+  {
+    "id": 11,
+    "book_title": "클라우스 슈밥의 제4차 산업혁명",
+    "publisher": "클라우스 슈밥",
+    "author": "새로운현재",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243639/32436397708.20230425162247.jpg"
+  },
+  {
+    "id": 12,
+    "book_title": "오셀로",
+    "publisher": "셰익스피어",
+    "author": "나남",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5048815/50488151621.20240927071011.jpg"
+  },
+  {
+    "id": 13,
+    "book_title": "루머의 루머의 루머",
+    "publisher": "제이 아셰르",
+    "author": "내인생의책",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3245496/32454960915.20230920072531.jpg"
+  },
+  {
+    "id": 14,
+    "book_title": "또 다른 별에서",
+    "publisher": "김혜순",
+    "author": "문학과지성사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249219/32492194969.20240625085941.jpg"
+  },
+  {
+    "id": 15,
+    "book_title": "이시드로파로디의 여섯가지 사건",
+    "publisher": "호르헤 루이스 보르헤스 외",
+    "author": "북하우스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249350/32493509134.20230708070911.jpg"
+  },
+  {
+    "id": 16,
+    "book_title": "작지만 강력한 디테일의 힘",
+    "publisher": "왕중추",
+    "author": "올림",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244162/32441625404.20230725120515.jpg"
+  },
+  {
+    "id": 17,
+    "book_title": "타인들 속에서",
+    "publisher": "조월튼",
+    "author": "아작",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248134/32481344677.20221231084414.jpg"
+  },
+  {
+    "id": 18,
+    "book_title": "공유경제는 어떻게 비즈니스가 되는가",
+    "publisher": "앨릭스 스테파니",
+    "author": "한스미디어",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249204/32492044300.20220527043312.jpg"
+  },
+  {
+    "id": 19,
+    "book_title": "언어의 한계는 세계의 한계다",
+    "publisher": "조중걸",
+    "author": "이야기가있는집",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243613/32436138759.20220527051201.jpg"
+  },
+  {
+    "id": 20,
+    "book_title": "오류가 발생했습니다",
+    "publisher": "이산화",
+    "author": "그래비티북스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_4579133/45791339619.20240214090927.jpg"
+  },
+  {
+    "id": 21,
+    "book_title": "중국개혁 30년",
+    "publisher": "청쓰웨이 외",
+    "author": "산해",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248653/32486533156.20220520163003.jpg"
+  },
+  {
+    "id": 22,
+    "book_title": "지적 대화를 위한 넓고 얕은 지식",
+    "publisher": "채사장",
+    "author": "한빛비즈",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3245596/32455965639.20241128071005.jpg"
+  },
+  {
+    "id": 23,
+    "book_title": "경영이란 무엇인가",
+    "publisher": "조안 마그레타",
+    "author": "김영사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243601/32436018900.20220527044957.jpg"
+  },
+  {
+    "id": 24,
+    "book_title": "GRIT",
+    "publisher": "말콤 글래드웰",
+    "author": "비즈니스북스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5804548/58045486717.20251206202242.jpg"
+  },
+  {
+    "id": 25,
+    "book_title": "경청(마음을 얻는 지혜)",
+    "publisher": "조신영/박현찬",
+    "author": "위즈덤하우스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3245648/32456481872.20250926083224.jpg"
+  },
+  {
+    "id": 26,
+    "book_title": "멈추면,비로소 보이는 것들",
+    "publisher": "혜민",
+    "author": "쌤앤파커스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244213/32442136303.20230919123822.jpg"
+  },
+  {
+    "id": 27,
+    "book_title": "근대의 역습(우리를 디자인한 근대의 장치들)",
+    "publisher": "오창섭",
+    "author": "홍시",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249249/32492492928.20221019133036.jpg"
+  },
+  {
+    "id": 28,
+    "book_title": "서양 근대 정치사상사",
+    "publisher": "강정인/김용민/황태연",
+    "author": "책세상",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246587/32465870415.20250809071220.jpg"
+  },
+  {
+    "id": 29,
+    "book_title": "프루스트와 기호들",
+    "publisher": "질 들뢰즈",
+    "author": "민음사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249332/32493321606.20251231072831.jpg"
+  },
+  {
+    "id": 30,
+    "book_title": "처절한 정원",
+    "publisher": "미셸 깽",
+    "author": "문학세계사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248051/32480517667.20240529070949.jpg"
+  },
+  {
+    "id": 31,
+    "book_title": "토성의 고리",
+    "publisher": "W.G. 제발트 ",
+    "author": "창비",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248337/32483375666.20251202090502.jpg"
+  },
+  {
+    "id": 32,
+    "book_title": "다른 남자",
+    "publisher": "베른하르트 슐링크",
+    "author": "이레",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246655/32466552082.20250603080111.jpg"
+  },
+  {
+    "id": 33,
+    "book_title": "슈뢰딩거의 고양희",
+    "publisher": "반-바지",
+    "author": "나무야 미안해",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5188399/51883991626.20241213070908.jpg"
+  },
+  {
+    "id": 34,
+    "book_title": "살아갈 날들을 위한 공부",
+    "publisher": "레프 톨스토이",
+    "author": "조화로운삶",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5234343/52343436625.20250108091407.jpg"
+  },
+  {
+    "id": 35,
+    "book_title": "정신병동 이야기",
+    "publisher": "대릴 커닝엄",
+    "author": "이숲",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246283/32462837899.20230801120904.jpg"
+  },
+  {
+    "id": 36,
+    "book_title": "인간의 마음을 사로잡는 스무가지 플롯",
+    "publisher": "로널드 B.토비아스",
+    "author": "풀빛",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3245596/32455963935.20230919130125.jpg"
+  },
+  {
+    "id": 37,
+    "book_title": "얼음의 도가니",
+    "publisher": "최수철",
+    "author": "문학사상사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3254474/32544744154.20241225071425.jpg"
+  },
+  {
+    "id": 38,
+    "book_title": "신곡Ⅰ",
+    "publisher": "단테",
+    "author": "하서",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": null
+  },
+  {
+    "id": 39,
+    "book_title": "신곡Ⅱ",
+    "publisher": "단테",
+    "author": "하서",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": null
+  },
+  {
+    "id": 40,
+    "book_title": "숨은꽃",
+    "publisher": "양귀자",
+    "author": "문학사상사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3494976/34949763619.20221019101355.jpg"
+  },
+  {
+    "id": 41,
+    "book_title": "한국남자",
+    "publisher": "최태섭",
+    "author": "은행나무",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244114/32441147046.20241113071212.jpg"
+  },
+  {
+    "id": 42,
+    "book_title": "아이의 두뇌를 깨우는 하루 15분, 책 읽어주기의 힘",
+    "publisher": "짐 트렐리즈",
+    "author": "북라인",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249689/32496893132.20220527080724.jpg"
+  },
+  {
+    "id": 43,
+    "book_title": "초조함,스트레스를 날려라 마음 편하게 살아라",
+    "publisher": "슈테판F.그로스",
+    "author": "동아일보사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": null
+  },
+  {
+    "id": 44,
+    "book_title": "닥치고 정치",
+    "publisher": "김어준",
+    "author": "푸른숲",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246660/32466602656.20221019131444.jpg"
+  },
+  {
+    "id": 45,
+    "book_title": "칭찬은 고래도 춤추게 한다",
+    "publisher": "켄 블랜차드 외 ",
+    "author": "21세기북스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246655/32466556782.20220527050349.jpg"
+  },
+  {
+    "id": 46,
+    "book_title": "엄마를 부탁해",
+    "publisher": "신경숙",
+    "author": "창비",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5101656/51016565621.20250623101953.jpg"
+  },
+  {
+    "id": 47,
+    "book_title": "열정을 경영하라",
+    "publisher": "진대제",
+    "author": "김영사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249754/32497547840.20230919124223.jpg"
+  },
+  {
+    "id": 48,
+    "book_title": "월드트레킹 완벽가이드 유럽",
+    "publisher": "이재홍",
+    "author": "여행마인드",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248547/32485478957.20221230074349.jpg"
+  },
+  {
+    "id": 49,
+    "book_title": "지금 이대로 좋다",
+    "publisher": "법륜",
+    "author": "정토출판",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5046497/50464972621.20240927071005.jpg"
+  },
+  {
+    "id": 50,
+    "book_title": "수미네반찬(김수미표 요만치 레시피북1)",
+    "publisher": "김수미,여경래,최현석,미카엘",
+    "author": "성안당",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246669/32466690711.20250402072054.jpg"
+  },
+  {
+    "id": 51,
+    "book_title": "수미네반찬(김수미표 요만치 레시피북2)",
+    "publisher": "김수미,여경래,최현석,미카엘",
+    "author": "성안당",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": null
+  },
+  {
+    "id": 52,
+    "book_title": "혼자여서 더 좋은 여행",
+    "publisher": "구지선",
+    "author": "넥서스BOOKS",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243829/32438293640.20230321162246.jpg"
+  },
+  {
+    "id": 53,
+    "book_title": "조선왕조실톡(조선패밀리의탄생)",
+    "publisher": "무적핑크",
+    "author": "위즈덤하우스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248331/32483318321.20230815082405.jpg"
+  },
+  {
+    "id": 54,
+    "book_title": "에이든 국내여행 가이드북",
+    "publisher": "이정기",
+    "author": "타블라라사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_4413755/44137550620.20231121082121.jpg"
+  },
+  {
+    "id": 55,
+    "book_title": "산골농부의 자연밥상",
+    "publisher": "자운",
+    "author": "한문화",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249410/32494107883.20251231073733.jpg"
+  },
+  {
+    "id": 56,
+    "book_title": "똑똑한 여우들의 직장생활 다이어리",
+    "publisher": "한옥경,이미정",
+    "author": "알키",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249785/32497856740.20230922071358.jpg"
+  },
+  {
+    "id": 57,
+    "book_title": "비폭력대화",
+    "publisher": "마셜B.로젠버그",
+    "author": "한국NVC출판사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_4936345/49363450618.20240725092054.jpg"
+  },
+  {
+    "id": 58,
+    "book_title": "지하철로 떠나는 서울&근교 여행",
+    "publisher": "최미선,신석교",
+    "author": "넥",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243816/32438162681.20230927071407.jpg"
+  },
+  {
+    "id": 59,
+    "book_title": "말센스(흥분하지않고 우아하게 리드하는)",
+    "publisher": "셀레스트 헤들리",
+    "author": "스몰빅라이프",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3247608/32476089079.20230509163943.jpg"
+  },
+  {
+    "id": 60,
+    "book_title": "미움받을용기",
+    "publisher": "알프레드 아들러",
+    "author": "인플루엔셜",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3681879/36818792620.20230829091541.jpg"
+  },
+  {
+    "id": 61,
+    "book_title": "어른은 어떻게 성장하는가",
+    "publisher": "존 헤네시",
+    "author": "부키",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246037/32460373772.20230704085012.jpg"
+  },
+  {
+    "id": 62,
+    "book_title": "불편한 편의점",
+    "publisher": "김호연",
+    "author": "나무옆의자",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244499/32444990070.20241228071326.jpg"
+  },
+  {
+    "id": 63,
+    "book_title": "나는마트대신부동산에 간다",
+    "publisher": "김유라",
+    "author": "한국경제신문",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243924/32439249904.20230913071609.jpg"
+  },
+  {
+    "id": 64,
+    "book_title": "D2C레볼루션(스타트업부터 글로벌 기업까지,마켓 체인저의 필수 전략) 2권",
+    "publisher": "로런스 인그래시아",
+    "author": "부키",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "/docker/mysql/DB/img/books/D2C레볼루션(스타트업부터 글로벌 기업까지,마켓 체인저의 필수 전략) 2권.jpg"
+  },
+  {
+    "id": 65,
+    "book_title": "안창호(도산사상)",
+    "publisher": "철정우",
+    "author": "삼육출판사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248605/32486055756.20221019114022.jpg"
+  },
+  {
+    "id": 66,
+    "book_title": "강의",
+    "publisher": "신영복",
+    "author": "돌베개",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5793061/57930613462.20251128092438.jpg"
+  },
+  {
+    "id": 67,
+    "book_title": "이기는습관",
+    "publisher": "전옥표",
+    "author": "쌤앤파커스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246370/32463708683.20230919123734.jpg"
+  },
+  {
+    "id": 68,
+    "book_title": "지리의힘",
+    "publisher": "팀 마샬",
+    "author": "사이",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5405077/54050775433.20250409094915.jpg"
+  },
+  {
+    "id": 69,
+    "book_title": "The Having(부와 행운을 끌어당기는 힘)",
+    "publisher": "이서윤,홍주연",
+    "author": "수오서재",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5593373/55933735620.20250729091648.jpg"
+  },
+  {
+    "id": 70,
+    "book_title": "당구의기술",
+    "publisher": "이정수",
+    "author": "삶과지식",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243631/32436317823.20240802072758.jpg"
+  },
+  {
+    "id": 71,
+    "book_title": "왜 일하는가",
+    "publisher": "이나모리 가즈오",
+    "author": "다산북스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246656/32466560683.20250328071017.jpg"
+  },
+  {
+    "id": 72,
+    "book_title": "아픔이 길이 되려면",
+    "publisher": "김승섭",
+    "author": "동아시아",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3247552/32475523886.20230913071629.jpg"
+  },
+  {
+    "id": 73,
+    "book_title": "불편한 편의점",
+    "publisher": "김호연",
+    "author": "나무옆의자",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244499/32444990070.20241228071326.jpg"
+  },
+  {
+    "id": 74,
+    "book_title": "기술은 어떻게 사업화되는가(더 쉽고,더 강력한 기술사업화의 정석)",
+    "publisher": "김욱",
+    "author": "지성사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248138/32481388620.20230627104407.jpg"
+  },
+  {
+    "id": 75,
+    "book_title": "공자를 찾아가는 인문학 여행(논어 인문학)",
+    "publisher": "전용주",
+    "author": "문예출판사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248510/32485100139.20250429074445.jpg"
+  },
+  {
+    "id": 76,
+    "book_title": "이어령의 마지막 수업",
+    "publisher": "김지수",
+    "author": "열림원",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244487/32444878874.20250408083336.jpg"
+  },
+  {
+    "id": 77,
+    "book_title": "아주작은습관의 힘",
+    "publisher": "제임스 클리어",
+    "author": "비즈니스북스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_5791749/57917490343.20251127092311.jpg"
+  },
+  {
+    "id": 78,
+    "book_title": "무릎좀펴고삽시다",
+    "publisher": "구로사와 히사시외3인",
+    "author": "포레스트북스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243613/32436138558.20230214162333.jpg"
+  },
+  {
+    "id": 79,
+    "book_title": "주식멘토 김현구의 주식 잘 사고 잘 파는법",
+    "publisher": "김현구",
+    "author": "메이트북스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243828/32438286864.20250628072048.jpg"
+  },
+  {
+    "id": 80,
+    "book_title": "무엇이 옳은가",
+    "publisher": "후안 엔리케스",
+    "author": "세계사",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246654/32466544460.20231102092114.jpg"
+  },
+  {
+    "id": 81,
+    "book_title": "인생의 무기가 되는 히든 스토리",
+    "publisher": "킨드라 홀",
+    "author": "월북",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249542/32495420629.20230919125541.jpg"
+  },
+  {
+    "id": 82,
+    "book_title": "언바운드(게임의 룰을 바꾸는 사람들의 성장 법칙)",
+    "publisher": "조용민",
+    "author": "인플루엔셜",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3247391/32473914993.20241213070925.jpg"
+  },
+  {
+    "id": 83,
+    "book_title": "인플레이션에서 살아남기",
+    "publisher": "오건영",
+    "author": "페이지2북스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248265/32482650730.20230912084107.jpg"
+  },
+  {
+    "id": 84,
+    "book_title": "우리 본성의 선한 천사",
+    "publisher": "스티븐 핑거",
+    "author": "사이언스 북스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244164/32441648222.20250705083054.jpg"
+  },
+  {
+    "id": 85,
+    "book_title": "역행자",
+    "publisher": "자청",
+    "author": "웅진지식하우스",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_4018811/40188117638.20231128155307.jpg"
+  },
+  {
+    "id": 86,
+    "book_title": "계절의 위로",
+    "publisher": "서은",
+    "author": "지식인하우스",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3401603/34016031625.20230418164227.jpg"
+  },
+  {
+    "id": 87,
+    "book_title": "채식주의자",
+    "publisher": "한강",
+    "author": "창비",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3248204/32482041666.20230725121007.jpg"
+  },
+  {
+    "id": 88,
+    "book_title": "데이터는 어떻게 인생의 무기가 되는가",
+    "publisher": "세스 스티븐스 다비도위츠",
+    "author": "더퀘스트",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3491528/34915286619.20230912083956.jpg"
+  },
+  {
+    "id": 89,
+    "book_title": "우울할 땐 뇌 과학",
+    "publisher": "앨릭스 코브",
+    "author": "심심",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3247402/32474029906.20230606101420.jpg"
+  },
+  {
+    "id": 90,
+    "book_title": "K 배터리 레볼루션",
+    "publisher": "박순혁",
+    "author": "지와인",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3735039/37350394621.20230906071317.jpg"
+  },
+  {
+    "id": 91,
+    "book_title": "챗GPT에게묻는 인류의 미래",
+    "publisher": "김대식",
+    "author": "동아시아",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3801893/38018933631.20230815075900.jpg"
+  },
+  {
+    "id": 92,
+    "book_title": "동급생",
+    "publisher": "프레드 울만",
+    "author": "열린책들",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244524/32445240649.20251230085534.jpg"
+  },
+  {
+    "id": 93,
+    "book_title": "사이토 히토리의 1퍼센트 부자의 법칙",
+    "publisher": "사이토 히토리",
+    "author": "나비스쿨",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "/docker/mysql/DB/img/books/사이토 히토리의 1퍼센트 부자의 법칙.jpg"
+  },
+  {
+    "id": 94,
+    "book_title": "챗 GPT 기회인가 위기인가",
+    "publisher": "서민준 이충환 한상기 한세희",
+    "author": "동아엠앤비",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3889468/38894682620.20230913071024.jpg"
+  },
+  {
+    "id": 95,
+    "book_title": "기업문화혁신사례",
+    "publisher": "월간인사관리 편집팀",
+    "author": "한국인사관리협회",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_4280836/42808362618.20251105071223.jpg"
+  },
+  {
+    "id": 96,
+    "book_title": "나는 왜 이일을 하는가2",
+    "publisher": "사이먼사이넥,데이비드미드,피터도커",
+    "author": "마일스톤",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3246283/32462839008.20230927071310.jpg"
+  },
+  {
+    "id": 97,
+    "book_title": "진짜 쓰는 실무 엑셀",
+    "publisher": "오빠두(전진권)",
+    "author": "제이펍",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3245492/32454929881.20231206091822.jpg"
+  },
+  {
+    "id": 98,
+    "book_title": "기분이 태도가 되지 말자",
+    "publisher": "김수현",
+    "author": "하이스트",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3609379/36093793619.20230828125825.jpg"
+  },
+  {
+    "id": 99,
+    "book_title": "도파민네이션",
+    "publisher": "애나 렘키",
+    "author": "흐름출판",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3245641/32456410558.20231004072423.jpg"
+  },
+  {
+    "id": 100,
+    "book_title": "챗GPT 사용설명서 버전업 2024",
+    "publisher": "송준용",
+    "author": "여의도책방",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_4772126/47721267619.20240516071210.jpg"
+  },
+  {
+    "id": 101,
+    "book_title": "페인트, 코팅, 접착제, 재료 화학",
+    "publisher": "임진규",
+    "author": "북해림",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_4547925/45479255634.20240203091013.jpg"
+  },
+  {
+    "id": 102,
+    "book_title": "백년허리2",
+    "publisher": "정성근",
+    "author": "언탱글링",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244341/32443415783.20230718122322.jpg"
+  },
+  {
+    "id": 103,
+    "book_title": "마흔에 읽은 쇼펜하우어",
+    "publisher": "강용수",
+    "author": "유노북스",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "/docker/mysql/DB/img/books/마흔에 읽는 쇼펜하우어.jpg"
+  },
+  {
+    "id": 104,
+    "book_title": "Nonviolent Communication",
+    "publisher": "Rosenberg, Marshall B",
+    "author": "PuddleDancer Press ",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_5144696/51446963441.20251110071928.jpg"
+  },
+  {
+    "id": 105,
+    "book_title": "LLM을 활용한 실전 AI 애플리케이션 개발",
+    "publisher": "허정준",
+    "author": "책만",
+    "applicant": "",
+    "application_date": null,
+    "loan_status": "대출 가능",
+    "image_url": "https://shopping-phinf.pstatic.net/main_4918353/49183530622.20240718072225.jpg"
+  },
+  {
+    "id": 106,
+    "book_title": "디자인 구구단",
+    "publisher": "에이핫",
+    "author": "길벗",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_4936617/49366171619.20240725092052.jpg"
+  },
+  {
+    "id": 107,
+    "book_title": "No Rules Rules",
+    "publisher": "Reed Hastings",
+    "author": "Virgin Books",
+    "applicant": null,
+    "application_date": null,
+    "loan_status": null,
+    "image_url": "https://shopping-phinf.pstatic.net/main_3244497/32444974266.20250624090122.jpg"
+  },
+  {
+    "id": 108,
+    "book_title": "소년이 온다",
+    "publisher": "한강",
+    "author": "창비",
+    "applicant": "이무재",
+    "application_date": "2024-12-04",
+    "loan_status": "대출 중",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3249140/32491401626.20231004072435.jpg"
+  },
+  {
+    "id": 109,
+    "book_title": "작별하지 않는다",
+    "publisher": "한강",
+    "author": "문학동네",
+    "applicant": "이무재",
+    "application_date": "2024-12-04",
+    "loan_status": "대출 중",
+    "image_url": "https://shopping-phinf.pstatic.net/main_3243636/32436366634.20231124160335.jpg"
+  }
+]

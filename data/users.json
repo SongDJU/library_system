@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "emp_code": "ADMIN001",
+      "login_id": "admin",
+      "name": "관리자",
+      "email": "",
+      "dept_code": "ADMIN",
+      "dept_name": "도서관리팀",
+      "is_admin": true,
+      "penalty_until": null,
+      "created_at": "2026-01-01"
+    },
+    {
+      "emp_code": "TEST001",
+      "login_id": "test_user",
+      "name": "테스트 사용자",
+      "email": "",
+      "dept_code": "DEV",
+      "dept_name": "개발팀",
+      "is_admin": false,
+      "penalty_until": null,
+      "created_at": "2026-01-01"
+    }
+  ],
+  "reservations": [],
+  "loan_history": [],
+  "email_logs": []
+}
