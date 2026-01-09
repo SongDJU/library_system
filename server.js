@@ -8,6 +8,8 @@
  * - SMTP 이메일 알림
  */
 
+require('dotenv').config();
+
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -18,15 +20,15 @@ const nodemailer = require('nodemailer');
 // ===========================================
 // 설정
 // ===========================================
-const PORT = 9500;
+const PORT = process.env.PORT || 9500;
 const DATA_DIR = path.join(__dirname, 'data');
 const BOOKS_PATH = path.join(DATA_DIR, 'books.json');
 const USERS_PATH = path.join(DATA_DIR, 'users.json');
 const CONFIG_PATH = path.join(DATA_DIR, 'config.json');
 
-// 네이버 API 설정
-const NAVER_CLIENT_ID = '9oSI2hvoTHAMvNQsbeSn';
-const NAVER_CLIENT_SECRET = '9sPMQsSeiA';
+// 네이버 API 설정 (.env에서 로드)
+const NAVER_CLIENT_ID = process.env.NAVER_CLIENT_ID;
+const NAVER_CLIENT_SECRET = process.env.NAVER_CLIENT_SECRET;
 
 // 대출 설정
 const LOAN_DURATION_DAYS = 14; // 2주
